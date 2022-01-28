@@ -1,7 +1,7 @@
 import { PerformanceTimer } from './lib/performance'
 
 class Pg {
-    @PerformanceTimer('calc')
+    @PerformanceTimer('random array with length of 10000000')
     async calc() {
         const numbers = Array.from({ length: 10000000 }, () => Math.floor(Math.random() * 1000))
         const res = numbers.map(x => x * 2)
